@@ -34,3 +34,17 @@ console.log(printInfo(10, 20)); // Value One Is 10, Value Two Is 20
 console.log(printInfo("10", "20")); // Value One Is "10", Value Two Is "20"
 console.log(printInfo(true, [1, 2, 3])); // We Don't Need This To Work
 */
+/* // assignment four
+let arr: (number | boolean[] | (string | (string | number)[])[])[];
+arr=[1,2,[true,false],['a',['b',4]]]
+ */
+// assignment 8
+// Using The Function => Do Not Edit
+function printInConsole(...rest) {
+    for (let i = 0; i < rest.length; i++) {
+        console.log(`The Value Is ${rest[i]} And Type Is ${typeof (rest[i])} `);
+    }
+}
+console.log(printInConsole(1, 2, 3, 4, 5));
+console.log(printInConsole("A", "B", "C"));
+console.log(printInConsole(true, false, false, true, true));
