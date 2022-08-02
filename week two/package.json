@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run1":"node dist/assignment1"
+    "run1":"node dist/assignment1",
+    "run2":"node dist/assignment2"
   },
   "keywords": [],
   "author": "",
