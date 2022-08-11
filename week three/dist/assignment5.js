@@ -6,6 +6,6 @@ class Shorten {
         this.title = title;
     }
 }
-let tester = new Shorten(100, "Elzero", "Developer");
-console.log(tester.id);
-console.log(tester.username);
+let anyname = new Shorten(100, "Elzero", "Developer");
+console.log(anyname.id);
+console.log(anyname.username);

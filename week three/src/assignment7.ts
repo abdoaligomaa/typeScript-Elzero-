@@ -1,4 +1,4 @@
-interface Play {
+interface PLAY {
   id: number;
   title: string;
   level: number | string;
@@ -7,20 +7,20 @@ interface Play {
 }
 
 // Create Your Class Here
-class Player implements Play{
-    constructor(id:number,title:string,level:number|string){}
+class PLAYER implements PLAY{
+    constructor(public id:number,public title:string,public level:number|string){}
     logIn(){
         console.log('log IN')
     }
-   logOut(){
-        console.log('good by')
+   logOut(msg:string){
+        console.log(msg)
     }
 }
 
-let player1 = new Player(100, "Elzero", 95);
+let newPlayer = new PLAYER(100, "Elzero", 95);
 
-console.log(player1.id); // 100
-console.log(player1.title); // "Elzero"
-console.log(player1.level); // 95
-player1.logIn(); // Logged In
-player1.logOut("Good Bye"); // Logged Out, Good Bye
+console.log(newPlayer.id); // 100
+console.log(newPlayer.title); // "Elzero"
+console.log(newPlayer.level); // 95
+newPlayer.logIn(); // Logged In
+newPlayer.logOut("Good Bye"); // Logged Out, Good Bye

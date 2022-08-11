@@ -1,17 +1,21 @@
 "use strict";
 // Create Your Class Here
-class Player {
-    constructor(id, title, level) { }
+class PLAYER {
+    constructor(id, title, level) {
+        this.id = id;
+        this.title = title;
+        this.level = level;
+    }
     logIn() {
         console.log('log IN');
     }
-    logOut() {
-        console.log('good by');
+    logOut(msg) {
+        console.log(msg);
     }
 }
-let player1 = new Player(100, "Elzero", 95);
-console.log(player1.id); // 100
-console.log(player1.title); // "Elzero"
-console.log(player1.level); // 95
-player1.logIn(); // Logged In
-player1.logOut("Good Bye"); // Logged Out, Good Bye
+let newPlayer = new PLAYER(100, "Elzero", 95);
+console.log(newPlayer.id); // 100
+console.log(newPlayer.title); // "Elzero"
+console.log(newPlayer.level); // 95
+newPlayer.logIn(); // Logged In
+newPlayer.logOut("Good Bye"); // Logged Out, Good Bye
